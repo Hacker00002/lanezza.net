@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #d4af37 !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* 
+/* scroll bar */
+html::-webkit-scrollbar {
+  display: none;
+}
+/* custom-scroll-bar */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  z-index: 300;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #d4af37;
+  width: 0%;
+}
+
+.screenshots-content img {
+  border-radius: 0.5rem;
+}
+
+/* header */
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #d4af37;
+}
+
+/* main */
+.swiper {
+  width: 100%;
+  /* height: 650px; */
+  border-radius: 25px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.img {
+  width: 110px !important;
+  height: 100px !important;
+  position: absolute;
+  left: 45%;
+  top: 25px;
+  z-index: 1;
+}
+
+/* about */
+.aboutFather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.aboutFather img {
+  width: 400px;
+  height: 550px;
+  border-radius: 15px;
+}
+
+.textFather h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.textFather p {
+  font-family: "Playfair Display", serif;
+  width: 500px;
+  line-height: 30px;
+}
+
+/* aboutTwo */
+/* about */
+.about2Father {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about2Father img {
+  width: 385px;
+  height: 550px;
+  border-radius: 15px;
+}
+
+.text2Father h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.text2Father p {
+  font-family: "Playfair Display", serif;
+  width: 490px;
+  line-height: 30px;
+}
+
+/* .aboutThree */
+.textFathers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.textFathers h3 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.textFathers p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  width: 700px;
+}
+
+/* video */
+.videoFather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.like {
+  position: relative;
+}
+
+.likeFather {
+  position: absolute;
+  left: 15px;
+  bottom: 25px;
+  font-size: 30px;
+  z-index: 5;
+  background-color: #fff !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.iconki {
+  color: #000 !important;
+}
+
+.active {
+  background-color: #d4af37 !important;
+}
+
+.activeTwo {
+  color: #fff !important;
+}
+
+.video-1 {
+  width: 300px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+/* footer */
+footer {
+  background-color: #d4af37;
+  padding-top: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#colorFooter {
+  color: #d4af37 !important;
+  font-size: 35px;
+}
+
+#colorLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px #fff;
+  transition: all 0.2s ease;
+  margin-bottom: 150px;
+}
+
+#colorLinks:hover {
+  transform: translateY(-10px);
+}
+
+.footerText h2 {
+  color: #fff !important;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #fff !important;
+  padding-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/* loader */
+.loader {
+  position: relative;
+  padding-top: 100px;
+  width: 40px;
+  margin: auto;
+  z-index: 5000;
+}
+.loader .circle {
+  position: absolute;
+  top: -350px;
+  width: 38px;
+  height: 38px;
+  opacity: 0;
+  transform: rotate(225deg);
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-duration: 5.5s;
+}
+.loader .circle:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #d4af37;
+  z-index: 5000;
+  /* Pick a color */
+}
+.loader .circle:nth-child(2) {
+  animation-delay: 240ms;
+}
+.loader .circle:nth-child(3) {
+  animation-delay: 480ms;
+}
+.loader .circle:nth-child(4) {
+  animation-delay: 720ms;
+}
+.loader .circle:nth-child(5) {
+  animation-delay: 960ms;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(225deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  7% {
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(815deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+}
